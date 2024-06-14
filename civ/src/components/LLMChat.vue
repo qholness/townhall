@@ -6,11 +6,11 @@ export default {
 
                 {
                     author: "User",
-                    text: "Add a on the northwest quadrant"
+                    text: "Add a tree to the northwest quadrant"
                 },
                 {
                     author: "🤖 Hermes",
-                    text: "Sure. Is there any particular tree you'd like?"
+                    text: "Sure. Is there any particular tree you'd like to see there?"
                 },
                 {
                     author: "User",
