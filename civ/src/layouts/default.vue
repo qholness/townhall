@@ -11,7 +11,7 @@
         </v-btn>
       </template>
     </v-app-bar>
-    <v-main>
+    <v-main class="container">
       <v-container>
         <router-view />
       </v-container>
@@ -28,3 +28,11 @@ export default {
   }
 }
 </script>
+
+<style>
+.container {
+  background-image: url('/src/assets/map.jpg');
+  background-position: left top fixed;
+  background-size: auto;
+}
+</style>
