@@ -7,5 +7,6 @@ export default defineConfig({
     },
   },
   viewportHeight: 812,
-  viewportWidth: 375
+  viewportWidth: 375,
+  video: true
 });
