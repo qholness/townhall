@@ -5,7 +5,16 @@ Civ is a public planning platform which allows for async planning processing, da
 - Source Code Repository ✅
 - Technical Documentation ✅
 - [Recorded Demo](https://www.loom.com/share/2a1e7adf899d47e59722ce3921d9f0ff)
-- Presentation 6.14.2024
+- [Presentation 6.14.2024](https://docs.google.com/presentation/d/1wM7jnCfhqlLIlX2Mla79djDnnaaTpPnENm3k8FYru1Y/edit?usp=sharing)
+
+# The Stack
+
+This is intended to be a mobile application.
+
+- Vue
+- (Hypothetical) Python backend for LLM interactions
+- Postgres
+- Kubernetes
 
 # Init
 ## Dockerized
