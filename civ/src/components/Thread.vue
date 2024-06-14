@@ -23,7 +23,7 @@ export default {
 </script>
 
 <template>
-    <v-list>
+    <v-list data-testid="thread">
         <v-list-item v-for="(m, i) of sortedMessages" :key="i" :style="{
             paddingBottom: '2px'
         }">

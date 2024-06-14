@@ -23,7 +23,21 @@ export default {
                 date: new Date("06/10/2024 11:00:00")
             }
             ],
-            tab: "multimedia"
+            tab: "multimedia",
+            tabs: [
+                { label: "desc", icon: "mdi-card-text-outline" },
+                {
+                    label: "multimedia",
+                    icon: "mdi-image-area"
+                }, {
+                    label: "calendar",
+                    icon: "mdi-calendar-month"
+                },
+                {
+                    label: "documents",
+                    icon: "mdi-file-multiple"
+                }
+            ]
         }
     },
     methods: {
@@ -37,26 +51,8 @@ export default {
 <template>
     <v-card title="New Park in O4W">
         <v-tabs v-model="tab">
-            <v-tooltip
-                text="A Government agency provided description of the project. Can be a more complex wiki entry if needed">
-                <template v-slot:activator="{ props }">
-                    <v-tab v-bind="props" value="desc">
-                        <v-icon>mdi-card-text-outline</v-icon>
-                    </v-tab>
-                </template>
-            </v-tooltip>
-            <v-tooltip text="A space for rich media uploaded or scraped from official sources.">
-                <template v-slot:activator="{ props }">
-                    <v-tab v-bind="props" value="multimedia">
-                        <v-icon>mdi-image-area</v-icon>
-                    </v-tab>
-                </template>
-            </v-tooltip>
-            <v-tab value="calendar">
-                <v-icon>mdi-calendar-month</v-icon>
-            </v-tab>
-            <v-tab value="documents">
-                <v-icon>mdi-file-multiple</v-icon>
+            <v-tab v-for="t of tabs" :value="t.label">
+                <v-icon>{{ t.icon }}</v-icon>
             </v-tab>
         </v-tabs>
         <v-container>

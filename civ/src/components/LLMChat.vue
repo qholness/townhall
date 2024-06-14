@@ -50,7 +50,7 @@ export default {
 </script>
 <template>
     <div>
-        <div :style="{
+        <div data-testid="chat-thread" :style="{
             height: '40vh',
             overflowY: 'scroll',
             // backgroundColor: 'rgba(240, 240, 240, .70)',

@@ -1,13 +1,11 @@
 <template>
-    <h2>Project Map</h2>
-    <div>
-        Going to "yadda yadda" this.
-        Essentially, this would be a tool for users to view
-        various project happening in particular areas.
-        This would be an additional tool for users to find what they care about.
-    </div>
-    <div id="layout">
+    <h2>Around Atlanta</h2>
+    <div id="mapLayout">
         <Map />
+    </div>
+    <div>
+        This will be a volumetric map showing locations of various projects
+        and providing users the ability to drill down into projects of interest.
     </div>
 </template>
 
@@ -22,7 +20,7 @@ export default {
 </script>
 
 <style>
-#layout {
+#mapLayout {
     flex: 1;
     display: flex;
     position: relative;

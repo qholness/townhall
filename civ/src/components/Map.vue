@@ -32,6 +32,6 @@ export default {
 <style>
 .map-container {
     flex: 1;
-    height: 100vh;
+    height: 50vh;
 }
 </style>

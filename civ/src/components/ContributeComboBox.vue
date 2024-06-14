@@ -62,17 +62,15 @@ export default defineComponent({
 </script>
 <template>
     <div>
-        <v-tooltip
-            text="This field can allow multimedia input and potentially be an avenue of communications with an LLM to learn more about the project">
-            <template v-slot:activator="{ props }">
-                <v-text-field v-bind="props" v-if="optedIn" v-model="inputMsg" v-on:keyup.enter="handleMessageInsert"
-                    placeholder="What are your thoughts?" />
-            </template>
-        </v-tooltip>
-        <v-btn elevation="0" v-if="!optedIn" @click="beginOptIn" text="Join the conversation" append-icon="mdi-lock" />
-        <v-dialog v-model="showJoinModal">
+        <v-text-field data-testid="contribute-combobox" v-if="optedIn" v-model="inputMsg"
+            v-on:keyup.enter="handleMessageInsert" placeholder="What are your thoughts?" append-icon="mdi-send"
+            @click:append="handleMessageInsert" />
+
+        <v-btn data-testid="begin-opt-in" elevation="0" v-if="!optedIn" @click="beginOptIn" text="Join the conversation"
+            append-icon="mdi-lock" />
+        <v-dialog v-model="showJoinModal" data-testid="camera-dialog">
             <camera :resolution="{ width: 375, height: 812 }" autoplay></camera>
-            <v-btn @click="optIn">Scan the QR Code</v-btn>
+            <v-btn data-testid="optIn-btn" @click="optIn">Scan the QR Code</v-btn>
         </v-dialog>
     </div>
 </template>

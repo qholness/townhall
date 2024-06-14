@@ -5,6 +5,10 @@
     data() {
       return {
         tab: null,
+        chatTabs: [
+          { label: "CS", icon: "mdi-chat" },
+          { label: "Chat", icon: "mdi-robot-excited" }
+        ]
       }
     }
   }
@@ -16,17 +20,11 @@
     }" />
     <v-card>
       <v-tabs v-model="tab">
-        <v-tab value="CS">
-          <v-icon>mdi-chat</v-icon>
-        </v-tab>
-        <v-tooltip
-          text="User can chat with an LLM powered by aggregated data to learn more about the project's history and future.
-          The agents prompt and source data can be modified to the project in view or expanded to include other projects.">
-          <template v-slot:activator="{ props }">
-            <v-tab v-bind="props" value="Chat">
-              <v-icon>mdi-robot-excited</v-icon></v-tab>
-          </template>
-        </v-tooltip>
+        <v-tabs v-model="tab">
+          <v-tab v-for="t of chatTabs" :value="t.label">
+            <v-icon>{{ t.icon }}</v-icon>
+          </v-tab>
+        </v-tabs>
       </v-tabs>
       <v-container>
         <v-tabs-window v-model="tab">
