@@ -25,6 +25,19 @@ Open cypress to run e2e tests
 
 Many tests are stubbed out to demonstrate proposed LLM capabilities rather than implementing them (24 hours...)
 
+# Users
+This project is designed around citizens and planning agencies and they would have different responsibilities.
+## Citizens
+- Able to provide feedback on projects
+- Able to use an LLM to do image alteration
+## Planners
+- Able to upload and maintain project descriptions
+- Able to approve/deny scraped data
+- Able to remove individuals from Geo-fence
+- Able to generate QR codes for projects
+
+This is a small subset of features which this app can provide
+
 # QR Geo-Fencing
 One of the biggest challenges of online forum is the potential for abuse.
 To resolve this, this application requires 2 things from users:
