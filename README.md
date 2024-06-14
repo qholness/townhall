@@ -4,7 +4,7 @@ Civ is a public planning platform which allows for async planning processing, da
 # Checklist
 - Source Code Repository ✅
 - Technical Documentation ✅
-- Demo (See: Cypress testing)
+- [Recorded Demo](https://www.loom.com/share/2a1e7adf899d47e59722ce3921d9f0ff)
 - Presentation 6.14.2024
 
 # Init

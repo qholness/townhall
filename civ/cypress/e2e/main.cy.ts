@@ -19,12 +19,14 @@ describe("Demo", () => {
         ["desc", "multimedia", "calendar", "documents"].forEach(t => {
             cy.get(`button[value="${t}"]`).click()
             cy.wait(1000)
+            cy.screenshot()
         })
     })
     it("Allows the user to click through chat interfaces", () => {
         ["CS", "Chat"].forEach(t => {
             cy.get(`button[value="${t}"]`).click()
             cy.wait(1000)
+            cy.screenshot()
         })
     })
     it("Joining a conversation triggers the QR scanning prompt", () => {
@@ -44,7 +46,7 @@ describe("Demo", () => {
     it("Forces users to submit a QR code and verifies against the local private key", () => {
         // Again, too little time
     })
-    it.only("Allows the user to interact with Hermes", () => {
+    it("Allows the user to interact with Hermes", () => {
         const testQuestion = "Show me the timeline of events of the project."
         cy.get(`button[value="Chat"]`).click()
         cy.get(`input[placeholder="Ask Lemmy"]`).type(testQuestion).type("{enter}")
