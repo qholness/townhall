@@ -9,10 +9,12 @@ Civ is a public planning platform which allows for async planning processing, da
 
 # Init
 ## Dockerized
-`docker cdompose up`
+```docker cdompose up```
 ## Local
-`npm i`
-`npm run dev`
+```
+npm i
+npm run dev
+```
 
 Should provide an application at http://localhost:3000
 
@@ -21,7 +23,7 @@ This application uses `Cypress` for testing and was designed with mobile devices
 in mind.
 
 Open cypress to run e2e tests
-`npx open cypress`
+```npx open cypress```
 
 Many tests are stubbed out to demonstrate proposed LLM capabilities rather than implementing them (24 hours...)
 
