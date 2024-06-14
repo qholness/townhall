@@ -9,7 +9,8 @@ Civ is a public planning platform which allows for async planning processing, da
 
 # Init
 ## Dockerized
-```docker cdompose up```
+```docker compose up```
+Feel free to view the configuration in `docker-compose.yaml`
 ## Local
 ```
 npm i
