@@ -11,5 +11,5 @@
 
 <script lang="ts" setup>
 //
-const appName = import.meta.env.VITE_APP_TITLE
+const appName = import.meta.env.VITE_APP_TITLE || "app"
 </script>

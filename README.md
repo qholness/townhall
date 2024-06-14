@@ -17,6 +17,14 @@ This is intended to be a mobile application.
 - Kubernetes
 
 # Init
+## Prerequisites
+.env
+```
+# Two env items
+VITE_APP_TITLE=... # Optional. Names the app.
+
+VITE_MAPBOX_KEY=... # Mapbox key. Renders the application's map interface via Mapbox integration.
+```
 ## Dockerized
 ```docker compose up```
 Feel free to view the configuration in `docker-compose.yaml`

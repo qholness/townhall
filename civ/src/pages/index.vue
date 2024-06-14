@@ -30,7 +30,7 @@
         <v-tabs-window v-model="tab">
           <v-tabs-window-item value="CS">
             <div :style="{
-              height: '40vh',
+              height: '35vh',
               overflowY: 'auto'
             }">
               <Thread />

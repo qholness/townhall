@@ -51,7 +51,7 @@ export default {
 <template>
     <div>
         <div data-testid="chat-thread" :style="{
-            height: '40vh',
+            height: '35vh',
             overflowY: 'scroll',
             // backgroundColor: 'rgba(240, 240, 240, .70)',
             marginBottom: '1vh'

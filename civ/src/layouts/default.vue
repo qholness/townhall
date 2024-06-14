@@ -23,7 +23,7 @@
 export default {
   computed: {
     appName() {
-      return import.meta.env.VITE_APP_TITLE
+      return import.meta.env.VITE_APP_TITLE || "app"
     }
   }
 }
