@@ -10,7 +10,7 @@
   }
 </script>
 <template>
-  <div>
+  <div data-testid="project-view-container">
     <ProjectInfoContainer />
     <v-tabs v-model="tab">
       <v-tab value="CS">
