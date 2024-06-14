@@ -1,5 +1,7 @@
 # Civ
-Civ is a public planning platform which allows for async planning processing, data aggregation and proof-of-work style geo-fencing
+Civ is a public planning platform which "asyncs" the public input process.
+The platform provides data aggregation tools and a "proof-of-work" style
+authentication mechanism to geo-fence input.
 
 # Checklist
 - Source Code Repository ✅
