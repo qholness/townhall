@@ -3,8 +3,13 @@ import { defineStore } from 'pinia'
 
 export const useAppStore = defineStore('app', {
   state: () => ({
+    // Since this is a demo, this data is faked.
+    // In a real world scenario, this data would live is some 
+    // persisted datatore (i.e., Postgres/Redis)
+    // For now, it's hard-coded.
     messages: [
-      {author: "Susan B.",
+      {
+        author: "Susan B.",
         content: "I would like there to be more trees",
         timestamp: new Date()
       },
